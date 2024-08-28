@@ -1,5 +1,5 @@
-import React from 'react'
-import { navigationList } from '../utils/navigationList'
+import React from "react";
+import { navigationList } from "../utils/navigationList";
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
                 {item.label}
               </a>
             </li>
-          ))}                                                                                   
+          ))}
         </ul>
       </div>
       <div className="text-white">
@@ -25,7 +25,7 @@ const Footer = () => {
                 {item.label}
               </a>
             </li>
-          ))}                                                                                   
+          ))}
         </ul>
       </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
             type="text"
             id="email"
             placeholder="Your Email"
-            autoComplete='off'
+            autoComplete="off"
             className="p-2 bg-gray-800 rounded focus:outline-none focus:ring-2 focus:bg-gray-600"
           />
           <textarea
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,20 +1,26 @@
 import React, { useEffect, useState } from "react";
-import CategoryCard from "../components/CategoryCard";
-import Pagination from "../components/Pagination";
+import { useParams } from "react-router-dom";
+import CategoryCard from "./CategoryCard";
 import { categoriesDetails } from "../utils/navigationList";
-import { useNavigate } from "react-router-dom";
+import Pagination from "./Pagination";
 
-const Home = () => {
-  const [itemsPerPage, setItemsPerPage] = useState(9);
+const CategoryDetails = () => {
+  const [items, setItems] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(9);
+  const [categoryName, setCategoryName] = useState();
+  const params = useParams();
+  const categoryId = Number(params?.categoryId);
   const totalPages = Math.ceil(categoriesDetails.length / itemsPerPage);
-  const navigate = useNavigate();
 
-  const handlePageChange = (page) => {
-    if (page > 0 && page <= totalPages) {
-      setCurrentPage(page);
-    }
-  };
+  useEffect(() => {
+    const category = categoriesDetails.find((category) => {
+      console.log({ id: categoryId, categoryId: category.id });
+      setCategoryName(category?.category);
+      return category.id === categoryId;
+    });
+    setItems(category?.items);
+  }, [categoryId]);
 
   const updateItemsPerPage = () => {
     const width = window.innerWidth;
@@ -29,7 +35,11 @@ const Home = () => {
     }
   };
 
-  console.log({ itemsPerPage, width: window.innerWidth });
+  const handlePageChange = (page) => {
+    if (page > 0 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+  };
 
   useEffect(() => {
     updateItemsPerPage();
@@ -41,19 +51,19 @@ const Home = () => {
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const visibleCategories = categoriesDetails.slice(startIndex, endIndex);
+  const visibleCategories = items.slice(startIndex, endIndex);
 
   return (
-    <div className="min-h-screen">
-      <main className="pt-24 px-4 ">
-        <h1 className="flex justify-center  h-12 items-center text-3xl tracking-wide font-bold">
-          Categories
+    <div>
+      <main className="pt-24 px-4">
+        <h1 className="flex justify-center h-12 items-center text-3xl tracking-wide font-bold">
+          {categoryName}
         </h1>
         <div className="grid grid-cols-1 md-sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 cursor-pointer">
           {visibleCategories.map((cat, index) => (
-            <div key={index} onClick={() => navigate(`/category/${cat.id}`)}>
+            <div key={index} onClick={() => {}}>
               <CategoryCard
-                title={cat.category}
+                title={cat.title}
                 imageUrl={cat.imageUrl}
                 description={cat.description}
               />
@@ -70,4 +80,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default CategoryDetails;

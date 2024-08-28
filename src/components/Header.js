@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { categories } from '../utils/navigationList';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { categoriesDetails } from "../utils/navigationList";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
-  const navigation = [{ label: "Home" }, { label: "About" }, { label: "Services" }, { label: "Contact" }];
+  const navigation = [
+    { label: "Home" },
+    { label: "About" },
+    { label: "Services" },
+    { label: "Contact" },
+  ];
   const navigate = useNavigate();
 
   const toggleMenu = () => {
@@ -17,8 +22,8 @@ const Header = () => {
     const value = e.target.value;
     setSearchTerm(value);
     if (value) {
-      const filtered = categories.filter((suggestion) =>
-        suggestion.title.toLowerCase().includes(value.toLowerCase())
+      const filtered = categoriesDetails.filter((suggestion) =>
+        suggestion.category.toLowerCase().includes(value.toLowerCase())
       );
       setFilteredSuggestions(filtered);
     } else {
@@ -34,7 +39,14 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-black text-white p-4 shadow-lg z-10 flex items-center justify-between">
       <div className="flex-none">
-        <h1 className="text-xl sm:text-2xl font-bold cursor-pointer" onClick={() => { navigate("/") }}>Demo</h1>
+        <h1
+          className="text-xl sm:text-2xl font-bold cursor-pointer"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Demo
+        </h1>
       </div>
 
       <div className="flex-grow mx-4 max-w-xs relative sm:max-w-md">
@@ -63,7 +75,6 @@ const Header = () => {
         )}
       </div>
 
-      {/* Right: Navigation Links */}
       <nav className="hidden sm:flex flex-none space-x-4">
         <ol className="flex space-x-4">
           {navigation.map((item) => (
@@ -76,15 +87,13 @@ const Header = () => {
         </ol>
       </nav>
 
-      {/* Hamburger Menu Button (Mobile View) */}
       <button className="sm:hidden text-2xl" onClick={toggleMenu}>
-        {isMenuOpen ? '✖' : '☰'}
+        {isMenuOpen ? "✖" : "☰"}
       </button>
 
-      {/* Mobile Menu */}
       <div
         className={`sm:hidden fixed top-0 right-0 w-3/4 bg-black text-white p-4 h-full transform ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}
       >
         <button
