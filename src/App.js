@@ -16,6 +16,11 @@ const App = () => {
             path="/about"
             element={()=>{}}
         />
+         <Route
+            exact
+            path="/digital"
+            element={()=>{}}
+        />
     </Routes>
 </BrowserRouter>
 </div>
