@@ -1,27 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
+import RightArrow from "../icons/RightArrow";
 
-const CategoryCard = ({ title, imageUrl, description }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  console.log({ imageUrl });
-
+const CategoryCard = ({ title, imageUrl, description, icons, appCount }) => {
   return (
-    <div
-      className={`bg-lightBlack text-white p-6 m-4 rounded-lg shadow-lg max-w-xs transform transition-transform duration-200 ${
-        isHovered ? "scale-110" : "hover:scale-105"
-      }`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      style={{ maxHeight: isHovered ? "auto" : "320px", overflow: "hidden" }}
-    >
-      <img
-        src={imageUrl}
-        alt={title}
-        className="h-32 w-full object-cover rounded-t-lg mb-4"
-      />
-      <h2 className="text-2xl font-bold mb-2">{title}</h2>
-      <p className={`text-sm text-gray-400 ${isHovered ? "" : "truncate"}`}>
-        {description}
-      </p>
+    <div className="bg-white text-black p-4 md:p-6 rounded-lg border border-gray-200">
+      <div className="min-h-[11rem]">
+        <h2 className="text-lg md:text-xl font-semibold mb-2">{title}</h2>
+        <p className="text-sm md:text-base text-gray-500 mb-4">{description}</p>
+      </div>
+      <div className="flex space-x-2 mb-4">
+        {icons.map((IconComponent, index) => (
+          <IconComponent key={index} className="h-6 w-6 text-gray-600" />
+        ))}
+      </div>
+      <div className="border-t pt-4 flex justify-between items-center">
+        <span className="text-green-600 text-sm md:text-base">
+          {appCount} Apps
+        </span>
+        <button className="bg-black text-white rounded-full py-2 px-4 text-sm md:text-base flex items-center space-x-2">
+          <span>Explore more</span>
+          <RightArrow height={16} width={16} />
+        </button>
+      </div>
     </div>
   );
 };

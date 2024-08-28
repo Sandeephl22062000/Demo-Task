@@ -1,110 +1,86 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { categoriesDetails, navigationList } from "../utils/constants";
+import { navigationList } from "../utils/constants";
+import RightArrow from "../icons/RightArrow";
+import DownArrow from "../icons/DownArrow";
+import DownSlimArrow from "../icons/DownSlimArrow";
+import ThreeLines from "../icons/ThreeLines";
+import CrossIcon from "../icons/CrossIcon";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const navigate = useNavigate();
-  const dropdownRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleSearchInputChange = (e) => {
-    const value = e.target.value;
-    setSearchTerm(value);
-    if (value) {
-      const filtered = categoriesDetails.filter((suggestion) =>
-        suggestion.category.toLowerCase().includes(value.toLowerCase())
-      );
-      console.log({ filtered, categoriesDetails });
-      setFilteredSuggestions(filtered);
-    } else {
-      setFilteredSuggestions([]);
-    }
-  };
-
-  const handleSuggestionClick = (suggestion) => {
-    setSearchTerm(suggestion?.title);
-    setFilteredSuggestions([]);
-  };
-
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setFilteredSuggestions([]);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
   return (
-    <header className="fixed top-0 left-0 w-full bg-black text-white p-4 shadow-lg z-10 flex items-center justify-between">
-      <div className="flex-none">
+    <header className="fixed top-0 left-0 w-full bg-white text-black p-4 border-b-2 border-gray-200 z-10 flex items-center justify-between px-[5vw]">
+      <div className="flex-none flex items-center space-x-3">
         <h1
-          className="text-xl sm:text-2xl font-bold cursor-pointer"
-          onClick={() => {
-            navigate("/");
-          }}
+          className="text-lg sm:text-2xl font-bold cursor-pointer text-purple-600"
+          onClick={() => navigate("/")}
         >
-          Demo
+          ShopDigest
         </h1>
+        <span className="flex justify-center text-lg text-gray-500 border-l-2  px-3">
+          <p>Shopify</p>
+          <span className="flex px-1 items-center cursor-pointer">
+            <DownArrow height={8} width={12} transform="rotate(90deg)" />
+          </span>
+        </span>
       </div>
 
-      <div
-        className="flex-grow mx-4 max-w-xs relative sm:max-w-md"
-        ref={dropdownRef}
-      >
-        <input
-          name="search"
-          type="text"
-          id="search"
-          placeholder="Search for Category"
-          autoComplete="off"
-          className="w-full p-2 bg-gray-800 rounded focus:outline-none focus:ring-2 focus:bg-gray-600 sm:text-base text-sm"
-          value={searchTerm}
-          onChange={handleSearchInputChange}
-        />
-        {filteredSuggestions.length > 0 && (
-          <ul className="absolute left-0 right-0 bg-gray-600 mt-1 rounded shadow-lg z-20">
-            {filteredSuggestions.map((suggestion, index) => (
-              <li
-                key={index}
-                className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
-                onClick={() => handleSuggestionClick(suggestion)}
-              >
-                {suggestion?.category}
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-
-      <nav className="hidden sm:flex flex-none space-x-4">
-        <ol className="flex space-x-4">
-          {navigationList.map((item) => (
-            <li key={item.label}>
-              <a href={item.link} className="hover:underline">
-                {item.label}
-              </a>
-            </li>
-          ))}
+      <nav className="hidden custom-md:flex flex-none space-x-4 text-lg">
+        <ol className="flex space-x-10">
+          <li>
+            <a href="/features" className="hover:underline">
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="/marketplace" className="hover:underline">
+              Market Place
+            </a>
+          </li>
+          <li className="flex items-center space-x-1">
+            <a href="/company" className="hover:underline">
+              Company
+            </a>
+            <div>
+              <DownSlimArrow height={16} width={16} />
+            </div>
+          </li>
+          <li>
+            <a href="/team" className="hover:underline">
+              Team
+            </a>
+          </li>
+          <li>
+            <a href="/contact" className="hover:underline">
+              Contact
+            </a>
+          </li>
         </ol>
       </nav>
 
-      <button className="sm:hidden text-2xl" onClick={toggleMenu}>
-        {isMenuOpen ? "✖" : "☰"}
+      <div className="hidden custom-md:flex flex-none items-center space-x-4">
+        <button className="py-2 px-4 text-purple-500 border border-purple-500 rounded-lg hover:bg-purple-50">
+          Login
+        </button>
+        <button className="py-2 px-4 bg-purple-500 text-white rounded-lg flex items-center space-x-2">
+          Add Post
+          <RightArrow height={20} width={20} />
+        </button>
+      </div>
+
+      <button className="custom-md:hidden text-2xl" onClick={toggleMenu}>
+        {!isMenuOpen && <ThreeLines height={20} width={20} />}
       </button>
 
       <div
-        className={`sm:hidden fixed top-0 right-0 w-3/4 bg-black text-white p-4 h-full transform ${
+        className={`custom-md:hidden fixed top-0 right-0 w-3/4 bg-black text-white p-4 h-full transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}
       >
@@ -112,7 +88,7 @@ const Header = () => {
           className="text-2xl absolute top-4 right-4"
           onClick={toggleMenu}
         >
-          ✖
+          <CrossIcon height={18} width={18} color={"white"} />
         </button>
         <nav>
           <ol className="flex flex-col space-y-4 mt-16">
@@ -127,6 +103,17 @@ const Header = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <button className="w-full py-2 px-4 text-purple-500 border border-purple-500 rounded-lg hover:bg-purple-50">
+                Login
+              </button>
+            </li>
+            <li>
+              <button className="w-full py-2 px-4 bg-purple-500 text-white rounded-lg flex items-center justify-center space-x-2">
+                Add Post
+                <RightArrow height={20} width={20} />
+              </button>
+            </li>
           </ol>
         </nav>
       </div>

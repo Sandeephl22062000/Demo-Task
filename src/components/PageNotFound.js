@@ -1,6 +1,3 @@
-// src/components/PageNotFound.js
-import React from "react";
-
 const PageNotFound = () => {
   return (
     <div className="flex flex-col min-h-[80vh] md:hmin-h-[90vh] bg-gray-100">

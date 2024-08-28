@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CategoryCard from "./CategoryCard";
-import { categoriesDetails } from "../utils/constants";
+import { cardDetails } from "../utils/constants";
 import Pagination from "./Pagination";
 
 const CategoryDetails = () => {
@@ -11,10 +11,10 @@ const CategoryDetails = () => {
   const [categoryName, setCategoryName] = useState();
   const params = useParams();
   const categoryId = Number(params?.categoryId);
-  const totalPages = Math.ceil(categoriesDetails.length / itemsPerPage);
+  const totalPages = Math.ceil(cardDetails.length / itemsPerPage);
 
   useEffect(() => {
-    const category = categoriesDetails.find((category) => {
+    const category = cardDetails.find((category) => {
       console.log({ id: categoryId, categoryId: category.id });
       setCategoryName(category?.category);
       return category.id === categoryId;
@@ -66,6 +66,7 @@ const CategoryDetails = () => {
                 title={cat.title}
                 imageUrl={cat.imageUrl}
                 description={cat.description}
+                appCount={cat.id}
               />
             </div>
           ))}

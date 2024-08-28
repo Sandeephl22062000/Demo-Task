@@ -8,7 +8,7 @@ module.exports = {
         lightBlack: "#333333",
       },
       screens: {
-        "md-sm": "450px", // Custom breakpoint between sm and md
+        "custom-md": "1000px",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
