@@ -1,5 +1,5 @@
 import React from "react";
-import { navigationList } from "../utils/navigationList";
+import { navigationList } from "../utils/constants";
 
 const Footer = () => {
   return (
@@ -19,13 +19,8 @@ const Footer = () => {
       <div className="text-white">
         <h1 className="mb-4 text-xl font-semibold ">Contact Us</h1>
         <ul className="space-y-2">
-          {navigationList.map((item, index) => (
-            <li key={index}>
-              <a href={item.link} className="hover:underline cursor-pointer">
-                {item.label}
-              </a>
-            </li>
-          ))}
+          <li>sandeep.h.lohar@gmail.com</li>
+          <li>+91 123 123 123 1</li>
         </ul>
       </div>
 

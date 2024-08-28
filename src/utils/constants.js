@@ -1,14 +1,26 @@
+import digital from "../assets/images/electronics.jpg";
+import cereal from "../assets/images/cereal.jpg";
+import fashion from "../assets/images/fashion.jpeg";
+import sports from "../assets/images/sports.jpg";
+import outdoor from "../assets/images/outdoor.jpeg";
+import homeDecor from "../assets/images/homeDecor.jpg";
+import homeFurnish from "../assets/images/home furnishing.jpeg";
+import furniture from "../assets/images/furniture.jpg";
+import books from "../assets/images/books.b.jpeg";
+import homeAppliance from "../assets/images/home appliances.jpg";
+
 export const navigationList = [
-  { label: "Home" },
-  { label: "About" },
-  { label: "Services" },
-  { label: "Contact" },
+  { label: "Home", link: "/" },
+  { label: "About", link: "/" },
+  { label: "Services", link: "/" },
+  { label: "Contact", link: "/" },
 ];
+
 export const categoriesDetails = [
   {
     id: 1,
     category: "Digital",
-    imageUrl: "",
+    imageUrl: digital,
     description: "Explore the latest in tech and gadgets.",
     items: [
       {
@@ -106,7 +118,7 @@ export const categoriesDetails = [
   {
     id: 2,
     category: "Cereal",
-    imageUrl: "path_to_image/cereal.jpg",
+    imageUrl: cereal,
     description: "Find your favorite breakfast cereals.",
     items: [
       {
@@ -204,7 +216,7 @@ export const categoriesDetails = [
   {
     id: 3,
     category: "Fashion",
-    imageUrl: "path_to_image/fashion.jpg",
+    imageUrl: fashion,
     description: "Discover the latest trends in fashion",
     items: [
       {
@@ -290,7 +302,7 @@ export const categoriesDetails = [
   {
     id: 4,
     category: "Books",
-    imageUrl: "path_to_image/books.jpg",
+    imageUrl: "../assets/images/books.b.jpeg",
     description: "Dive into a world of knowledge and stories.",
     items: [
       {
@@ -388,7 +400,7 @@ export const categoriesDetails = [
   {
     id: 5,
     category: "Home Appliances",
-    imageUrl: "path_to_image/appliances.jpg",
+    imageUrl: homeAppliance,
     description: "Upgrade your home with the latest appliances.",
     items: [
       {
@@ -486,7 +498,7 @@ export const categoriesDetails = [
   {
     id: 6,
     category: "Sports",
-    imageUrl: "path_to_image/sports.jpg",
+    imageUrl: sports,
     description: "Gear up for your favorite sports activities.",
     items: [
       {
@@ -584,7 +596,7 @@ export const categoriesDetails = [
   {
     id: 7,
     category: "Home Furnishing",
-    imageUrl: "path_to_image/home_furnishing.jpg",
+    imageUrl: homeFurnish,
     description: "Upgrade your home with stylish furnishings.",
     items: [
       {
@@ -682,7 +694,7 @@ export const categoriesDetails = [
   {
     id: 8,
     category: "Home Decor",
-    imageUrl: "path_to_image/home_decor.jpg",
+    imageUrl: homeDecor,
     description: "Decorate your space with beautiful decor.",
     items: [
       {
@@ -780,7 +792,7 @@ export const categoriesDetails = [
   {
     id: 9,
     category: "Furniture",
-    imageUrl: "path_to_image/furniture.jpg",
+    imageUrl: furniture,
     description: "Find quality furniture for your home.",
     items: [
       {
@@ -878,6 +890,8 @@ export const categoriesDetails = [
   {
     id: 10,
     category: "Outdoor",
+    description: "Gear up for your favorite outdoor activities.",
+    imageUrl: outdoor,
     items: [
       {
         id: 1,
@@ -1169,7 +1183,7 @@ export const categoriesDetails = [
     ],
   },
   {
-    id:13,
+    id: 13,
     category: "Fashion",
     imageUrl: "path_to_image/fashion.jpg",
     description: "Discover the latest trends in fashion",
@@ -1845,6 +1859,7 @@ export const categoriesDetails = [
   {
     id: 20,
     category: "Outdoor",
+    description: "Gear up for your favorite outdoor activities.",
     items: [
       {
         id: 1,

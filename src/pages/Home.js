@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CategoryCard from "../components/CategoryCard";
 import Pagination from "../components/Pagination";
-import { categoriesDetails } from "../utils/navigationList";
+import { categoriesDetails } from "../utils/constants";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -29,8 +29,6 @@ const Home = () => {
     }
   };
 
-  console.log({ itemsPerPage, width: window.innerWidth });
-
   useEffect(() => {
     updateItemsPerPage();
     window.addEventListener("resize", updateItemsPerPage);
@@ -42,6 +40,7 @@ const Home = () => {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const visibleCategories = categoriesDetails.slice(startIndex, endIndex);
+  console.log({ visibleCategories });
 
   return (
     <div className="min-h-screen">
@@ -49,6 +48,7 @@ const Home = () => {
         <h1 className="flex justify-center  h-12 items-center text-3xl tracking-wide font-bold">
           Categories
         </h1>
+
         <div className="grid grid-cols-1 md-sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 cursor-pointer">
           {visibleCategories.map((cat, index) => (
             <div key={index} onClick={() => navigate(`/category/${cat.id}`)}>
@@ -60,6 +60,7 @@ const Home = () => {
             </div>
           ))}
         </div>
+
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}

@@ -14,7 +14,6 @@ const App = () => {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={() => {}} />
           <Route exact path="/digital" element={() => {}} />
           <Route
             exact

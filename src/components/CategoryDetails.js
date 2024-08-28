@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CategoryCard from "./CategoryCard";
-import { categoriesDetails } from "../utils/navigationList";
+import { categoriesDetails } from "../utils/constants";
 import Pagination from "./Pagination";
 
 const CategoryDetails = () => {
