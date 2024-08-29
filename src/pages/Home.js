@@ -46,13 +46,18 @@ const Home = () => {
   return (
     <div className="min-h-screen px-4 md:px-[5vw]">
       <main className="pt-16 md:pt-24">
-        <h1 className="font-bold text-2xl md:text-3xl px-4 py-3">
-          Top Shopify collections
-        </h1>
-        <p className="px-5 font-light text-sm md:text-base mb-4 text-gray-500">
-          We use an agile approach to test assumptions and connect with the
-          needs of your audience early and often.
-        </p>
+        <div className="px-3 pt-4">
+          <h1 className="font-bold text-2xl md:text-3xl px-4 py-3">
+            Top Shopify collections
+          </h1>
+          <div className="flex justify-between text-blue-500 pb-[3vh]">
+            <p className="px-5 font-light text-sm md:text-base mb-4 text-gray-500">
+              We use an agile approach to test assumptions and connect with the
+              needs of your audience early and often.
+            </p>
+            <span className="pr-5 cursor-pointer">See all</span>
+          </div>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 custom-md:grid-cols-3 xl:grid-cols-4 gap-6 px-[2vw]">
           {visibleCategories.map((cat, index) => (
             <div key={index}>
@@ -60,12 +65,12 @@ const Home = () => {
                 title={cat.title}
                 description={cat.description}
                 icons={cat.icons}
-                appCount={cat.id}
+                appCount={cat.appCounts}
               />
             </div>
           ))}
         </div>
-        <div className="px-[2vw]">
+        <div className="px-[2vw] py-[4vh]">
           <Pagination
             currentPage={currentPage}
             totalPages={totalPages}

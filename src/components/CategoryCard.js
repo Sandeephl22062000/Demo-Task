@@ -1,7 +1,7 @@
 import React from "react";
 import RightArrow from "../icons/RightArrow";
 
-const CategoryCard = ({ title, imageUrl, description, icons, appCount }) => {
+const CategoryCard = ({ title, description, icons, appCount }) => {
   return (
     <div className="bg-white text-black p-4 md:p-6 rounded-lg border border-gray-200">
       <div className="min-h-[11rem]">
@@ -9,8 +9,8 @@ const CategoryCard = ({ title, imageUrl, description, icons, appCount }) => {
         <p className="text-sm md:text-base text-gray-500 mb-4">{description}</p>
       </div>
       <div className="flex space-x-2 mb-4">
-        {icons.map((IconComponent, index) => (
-          <IconComponent key={index} className="h-6 w-6 text-gray-600" />
+        {icons.map(({ IconComponent, color }, index) => (
+          <IconComponent key={index} className={`h-10 w-10 ${color}`} />
         ))}
       </div>
       <div className="border-t pt-4 flex justify-between items-center">

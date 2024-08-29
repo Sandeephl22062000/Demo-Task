@@ -12,7 +12,6 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 
   return (
     <div className="flex flex-col sm:flex-row items-center justify-between my-4 border-2 px-4 py-2 rounded-md">
-      {/* Section 1: Showing X-Y of Z */}
       <div className="text-gray-600 hidden md:flex">
         <span className="px-1">Showing</span>
         <span className="font-semibold">{startItem}</span>-
@@ -22,7 +21,6 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       </div>
 
       <div className="flex">
-        {/* Previous Button */}
         <button
           className={`px-4 py-1 rounded-l-md border border-r-0 min-w-24 ${
             currentPage === 1 ? "text-gray-400" : "text-gray-500"
@@ -32,7 +30,6 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         >
           Previous
         </button>
-        {/* Next Button */}
         <button
           className={`px-4 py-1 rounded-r-md border min-w-24 ${
             currentPage === totalPages ? "text-gray-400" : "text-gray-500"
@@ -44,7 +41,6 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         </button>
       </div>
 
-      {/* Pagination Numbers */}
       <div className="border border-gray-300 rounded-lg flex items-center p-1 hidden lg:flex">
         <button
           className="px-3 py-1 text-gray-500 border-r border-gray-300 last:border-r-0"
@@ -58,6 +54,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             transform="rotate(90 24 24)"
           />
         </button>
+
         {pageNumbers.slice(0, 5).map((pageNum) => (
           <button
             key={pageNum}
@@ -69,11 +66,13 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             {pageNum}
           </button>
         ))}
+
         {totalPages > 5 && (
           <span className="px-3 py-1 text-gray-500 border-r border-gray-300 last:border-r-0">
             ...
           </span>
         )}
+
         {totalPages > 1 && (
           <button
             className="px-3 py-1 text-gray-500"
