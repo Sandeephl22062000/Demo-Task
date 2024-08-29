@@ -24,7 +24,7 @@ const Header = () => {
         >
           ShopDigest
         </h1>
-        <span className="flex justify-center text-lg font-semibold tracking-wider text-gray-700 border-l-2  px-3">
+        <span className="flex justify-center text-lg font-semibold tracking-wider text-gray-700 border-l-2 px-3">
           <p>Shopify</p>
           <span className="flex px-1 items-center cursor-pointer">
             <DownArrow height={8} width={12} transform="rotate(90deg)" />
@@ -32,40 +32,65 @@ const Header = () => {
         </span>
       </div>
 
-      <nav className="hidden custom-md:flex flex-none space-x-4 text-lg font-medium">
-        <ol className="flex space-x-10">
+      <nav className="hidden md-lg:flex flex-none space-x-2 text-lg font-medium">
+        <ol className="flex md-lg:space-x-6 lg-space-x-10">
           <li>
-            <a href="/" className="hover:underline">
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               Features
-            </a>
+            </div>
           </li>
           <li>
-            <a href="/" className="hover:underline">
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               Market Place
-            </a>
+            </div>
           </li>
           <li className="flex items-center space-x-1">
-            <a href="/" className="hover:underline">
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               Company
-            </a>
+            </div>
             <div>
               <DownSlimArrow height={16} width={16} />
             </div>
           </li>
           <li>
-            <a href="/" className="hover:underline">
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               Team
-            </a>
+            </div>
           </li>
           <li>
-            <a href="/" className="hover:underline">
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               Contact
-            </a>
+            </div>
           </li>
         </ol>
       </nav>
 
-      <div className="hidden custom-md:flex flex-none items-center space-x-4">
+      <div className="hidden md-lg:flex flex-none items-center space-x-4">
         <button className="py-2 px-4 text-purple-700 border border-purple-700 rounded-lg hover:bg-purple-50 font-semibold  min-w-[6vw] ">
           Login
         </button>
@@ -77,12 +102,12 @@ const Header = () => {
         </button>
       </div>
 
-      <button className="custom-md:hidden text-2xl" onClick={toggleMenu}>
+      <button className="md-lg:hidden text-2xl" onClick={toggleMenu}>
         {!isMenuOpen && <ThreeLines height={20} width={20} />}
       </button>
 
       <div
-        className={`custom-md:hidden fixed top-0 right-0 w-3/4 bg-black text-white p-4 h-full transform ${
+        className={`md-lg:hidden fixed top-0 right-0 w-3/4 bg-black text-white p-4 h-full transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}
       >
@@ -96,13 +121,15 @@ const Header = () => {
           <ol className="flex flex-col space-y-4 mt-16">
             {navigationList.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.link}
-                  className="hover:underline"
-                  onClick={toggleMenu}
+                <div
+                  className="cursor-pointer"
+                  onClick={() => {
+                    toggleMenu();
+                    navigate(`${item.link}`);
+                  }}
                 >
                   {item.label}
-                </a>
+                </div>
               </li>
             ))}
             <li>
