@@ -216,7 +216,7 @@ export const cardDetails = [
     ],
   },
   {
-    id:11,
+    id: 11,
     title: "made-by-shopify",
     description:
       "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
@@ -398,6 +398,1006 @@ export const cardDetails = [
   },
   {
     id: 20,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 21,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 22,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 23,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 24,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 25,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 26,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 27,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 28,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 29,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 30,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 31,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 32,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 33,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 34,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 35,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 36,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 37,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 38,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 39,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 40,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 41,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 42,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 43,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 44,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 45,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 46,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 47,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 48,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 49,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 50,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 51,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 52,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 53,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 54,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 55,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 56,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 57,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 58,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 59,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 60,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 61,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 62,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 63,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 64,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 65,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 66,
+    title: "Works with Shopify Marketing",
+    description:
+      "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 17,
+    icons: [
+      { IconComponent: BiMailSend, style: "h-6 w-6" },
+      {
+        IconComponent: IoLogoDiscord,
+        color: "text-red-500",
+        style: "h-10 w-10 pt-1",
+      },
+      {
+        IconComponent: AiOutlineLinkedin,
+        color: "text-blue-500",
+        style: "h-10 w-10 pt-1",
+      },
+    ],
+  },
+  {
+    id: 67,
+    title: "Work with spotify POS",
+    description:
+      "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 104,
+    icons: [
+      {
+        IconComponent: FaSnapchatSquare,
+        color: "text-yellow-300",
+      },
+      {
+        IconComponent: IoFunnel,
+        color: "text-blue-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    id: 68,
+    title: "Useful apps fir India",
+    description:
+      "The Useful apps for India feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 18,
+    icons: [
+      { IconComponent: IoLogoDiscord, color: "text-orange-400" },
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-brown-500",
+      },
+      {
+        IconComponent: IoCartSharp,
+        color: "text-violet-500",
+      },
+    ],
+  },
+  {
+    id: 69,
+    title: "made-by-shopify",
+    description:
+      "The made-by-shopify feature allows you to enhance productivity and streamline your workflow.",
+    appCounts: 35,
+    icons: [
+      {
+        IconComponent: FaSquareInstagram,
+        color: "text-pink-400",
+      },
+      {
+        IconComponent: FaWhatsapp,
+        color: "text-green-500",
+      },
+      {
+        IconComponent: IoMdMailUnread,
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    id: 70,
     title: "Works with Shopify Marketing",
     description:
       "The Works with Shopify Marketing feature allows you to enhance productivity and streamline your workflow.",
