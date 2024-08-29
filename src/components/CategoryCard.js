@@ -1,5 +1,5 @@
 import React from "react";
-import RightArrow from "../icons/RightArrow";
+import { FaArrowRight } from "react-icons/fa6";
 
 const CategoryCard = ({ title, description, icons, appCount }) => {
   return (
@@ -17,9 +17,9 @@ const CategoryCard = ({ title, description, icons, appCount }) => {
         <span className="text-green-600 text-sm md:text-base">
           {appCount} Apps
         </span>
-        <button className="bg-black text-white rounded-full py-2 px-4 text-sm md:text-base flex items-center space-x-2">
+        <button className="bg-black text-white rounded-full py-2 px-4 text-sm md:text-base flex items-center space-x-4">
           <span>Explore more</span>
-          <RightArrow height={16} width={16} />
+          <FaArrowRight className="h-3 w-4" />
         </button>
       </div>
     </div>

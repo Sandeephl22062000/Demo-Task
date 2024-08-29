@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { navigationList } from "../utils/constants";
-import RightArrow from "../icons/RightArrow";
 import DownArrow from "../icons/DownArrow";
 import DownSlimArrow from "../icons/DownSlimArrow";
 import ThreeLines from "../icons/ThreeLines";
 import CrossIcon from "../icons/CrossIcon";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +33,7 @@ const Header = () => {
       </div>
 
       <nav className="hidden md-lg:flex flex-none space-x-2 text-lg font-medium">
-        <ol className="flex md-lg:space-x-6 lg-space-x-10">
+        <ol className="flex custom-md:space-x-6 xl:space-x-10">
           <li>
             <div
               className="cursor-pointer"
@@ -97,7 +97,7 @@ const Header = () => {
         <button className="py-2 px-4 bg-purple-700 text-white rounded-lg flex justify-center items-center space-x-2 min-w-[9vw] font-semibold">
           Add post
           <div className="pl-3">
-            <RightArrow height={20} width={20} />
+            <FaArrowRightLong />
           </div>
         </button>
       </div>
@@ -140,7 +140,7 @@ const Header = () => {
             <li>
               <button className="w-full py-2 px-4 bg-purple-500 text-white rounded-lg flex items-center justify-center space-x-2">
                 Add Post
-                <RightArrow height={15} width={20} />
+                <FaArrowRightLong />
               </button>
             </li>
           </ol>
