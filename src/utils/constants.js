@@ -21,7 +21,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -101,7 +101,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -181,7 +181,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -261,7 +261,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -341,7 +341,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -441,7 +441,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -541,7 +541,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -641,7 +641,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -741,7 +741,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -841,7 +841,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -941,7 +941,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -1041,7 +1041,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -1141,7 +1141,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -1241,7 +1241,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,
@@ -1341,7 +1341,7 @@ export const cardDetails = [
     title: "Work with spotify POS",
     description:
       "The Works with Shopify POS feature allows you to enhance productivity and streamline your workflow.",
-    appCounts: 104,
+    appCounts: 94,
     icons: [
       {
         IconComponent: FaSnapchatSquare,

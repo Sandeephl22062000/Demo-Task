@@ -63,7 +63,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 custom-md:grid-cols-3 xl:grid-cols-4 gap-6 px-[2vw]">
+        <div className="grid grid-cols-1 md:grid-cols-2 custom-md:grid-cols-3 custom-lg:grid-cols-4 gap-6 px-[2vw]">
           {visibleCategories.map((cat, index) => (
             <div key={index}>
               <CategoryCard

@@ -9,6 +9,7 @@ module.exports = {
       },
       screens: {
         "custom-md": "1000px",
+        "custom-lg": "1320px",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
