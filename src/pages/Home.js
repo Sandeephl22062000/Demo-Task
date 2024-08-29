@@ -46,18 +46,23 @@ const Home = () => {
   return (
     <div className="min-h-screen px-4 md:px-[5vw]">
       <main className="pt-16 md:pt-24">
-        <div className="px-3 pt-4">
-          <h1 className="font-bold text-2xl md:text-3xl px-4 py-3">
-            Top Shopify collections
+        <div className="px-4 py-5 md:px-6 md:py-6">
+          <h1 className="font-bold text-xl md:text-2xl lg:text-3xl px-2 md:px-4 py-2">
+            Top Shopify Collections
           </h1>
-          <div className="flex justify-between text-blue-500 pb-[3vh]">
-            <p className="px-5 font-light text-sm md:text-base mb-4 text-gray-500">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center text-blue-500 pb-5 md:pb-6">
+            <p className="px-2 md:px-4 text-xs md:text-sm lg:text-base mb-2 md:mb-0 text-gray-500">
               We use an agile approach to test assumptions and connect with the
               needs of your audience early and often.
             </p>
-            <span className="pr-5 cursor-pointer">See all</span>
+            <div className="flex flex-col md:flex-row items-end md:items-center md:ml-auto mt-2 md:mt-0">
+              <span className="cursor-pointer text-sm md:text-base pl-4">
+                See all
+              </span>
+            </div>
           </div>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 custom-md:grid-cols-3 xl:grid-cols-4 gap-6 px-[2vw]">
           {visibleCategories.map((cat, index) => (
             <div key={index}>
