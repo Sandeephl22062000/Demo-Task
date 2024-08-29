@@ -91,7 +91,7 @@ const Header = () => {
       </nav>
 
       <div className="hidden md-lg:flex flex-none items-center space-x-4">
-        <button className="py-2 px-4 text-purple-700 border border-purple-700 rounded-lg hover:bg-purple-50 font-semibold  min-w-[6vw] ">
+        <button className="py-2 px-4 text-purple-700 border border-purple-700 rounded-lg hover:bg-purple-50 font-semibold  min-w-[6vw]">
           Login
         </button>
         <button className="py-2 px-4 bg-purple-700 text-white rounded-lg flex justify-center items-center space-x-2 min-w-[9vw] font-semibold">
@@ -138,9 +138,11 @@ const Header = () => {
               </button>
             </li>
             <li>
-              <button className="w-full py-2 px-4 bg-purple-500 text-white rounded-lg flex items-center justify-center space-x-2">
+              <button className="w-full py-2 px-4 bg-purple-700 text-white rounded-lg flex items-center justify-center space-x-2 font-semibold">
                 Add Post
-                <FaArrowRightLong />
+                <div className="pl-3">
+                  <FaArrowRightLong />
+                </div>
               </button>
             </li>
           </ol>
